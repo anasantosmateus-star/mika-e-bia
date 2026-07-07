@@ -104,3 +104,90 @@ area.appendChild(botao);
 });
 
 }
+function verificarResposta(indice){
+
+let pergunta = perguntas[perguntaAtual];
+
+if(indice === pergunta.correta){
+
+pontos += 10;
+
+document.getElementById("mensagem").innerHTML =
+"✅ Correto!";
+
+document.getElementById("mensagem").style.color =
+"green";
+
+}else{
+
+document.getElementById("mensagem").innerHTML =
+"❌ Resposta incorreta!";
+
+document.getElementById("mensagem").style.color =
+"red";
+
+}
+
+document.getElementById("pontos").innerHTML =
+"Pontos: " + pontos;
+
+// Atualiza barra de progresso
+let porcentagem =
+((perguntaAtual + 1) / perguntas.length) * 100;
+
+document.getElementById("progresso").style.width =
+porcentagem + "%";
+
+// Vai para a próxima pergunta após 1 segundo
+setTimeout(function(){
+
+perguntaAtual++;
+
+if(perguntaAtual < perguntas.length){
+
+mostrarPergunta();
+
+}else{
+
+mostrarCertificado();
+
+}
+
+},1000);
+
+}
+
+function mostrarCertificado(){
+
+document.getElementById("quiz").style.display =
+"none";
+
+document.getElementById("certificado").style.display =
+"block";
+
+document.getElementById("nomeFinal").innerHTML =
+nomeJogador;
+
+document.getElementById("pontuacaoFinal").innerHTML =
+"Pontuação Final: " + pontos + " pontos";
+
+let medalha = "";
+
+if(pontos >= 90){
+
+medalha = "🥇 Medalha de Ouro - Herói do Trânsito";
+
+}else if(pontos >= 50){
+
+medalha = "🥈 Medalha de Prata - Motorista Consciente";
+
+}else{
+
+medalha = "🥉 Medalha de Bronze - Aprendiz do Trânsito";
+
+}
+
+document.getElementById("medalha").innerHTML =
+medalha;
+
+}
