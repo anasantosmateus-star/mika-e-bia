@@ -17,16 +17,7 @@
 
         <input type="text" id="nome" placeholder="Seu nome">
 
-        <p>Escolha seu personagem:</p>
-
-        <select id="personagem">
-            <option>🚶 Pedestre Consciente</option>
-            <option>🚲 Ciclista Seguro</option>
-            <option>🚗 Motorista Responsável</option>
-            <option>👮 Guarda de Trânsito</option>
-        </select>
-
-        <button onclick="iniciarJogo()">Começar</button>
+        <button onclick="iniciarJogo()">Começar Jogo</button>
     </div>
 
     <div id="quiz" style="display:none;">
@@ -47,26 +38,21 @@
 
     <div id="certificado" style="display:none;">
 
-        <h1>🏆 CERTIFICADO 🏆</h1>
-
-        <h2>Guardião do Trânsito</h2>
-
-        <p>Certificamos que</p>
+        <h1>🏆 Certificado 🏆</h1>
 
         <h2 id="nomeFinal"></h2>
 
-        <p>Concluiu com sucesso o jogo educativo
-        <b>Missão Trânsito Seguro</b>.</p>
+        <p>Concluiu o jogo <strong>Missão Trânsito Seguro</strong>.</p>
 
-        <p id="personagemFinal"></p>
+        <p id="pontuacaoFinal"></p>
 
-        <h3 id="pontosFinal"></h3>
+        <p id="medalha"></p>
 
-        <h2 id="medalha"></h2>
+        <p><strong>Respeitar o trânsito salva vidas!</strong></p>
 
-        <p><b>Respeitar o trânsito salva vidas.</b></p>
-
-        <button onclick="location.reload()">Jogar Novamente</button>
+        <button onclick="location.reload()">
+            Jogar Novamente
+        </button>
 
     </div>
 
