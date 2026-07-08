@@ -5,32 +5,32 @@ let perguntaAtual = 0;
 const perguntas = [
 {
 pergunta:"🚶 Onde o pedestre deve atravessar a rua?",
-respostas:["Na faixa de pedestres","No meio da rua","Entre os carros"],
+respostas:["No meio da rua","Na faixa de pedestres","Entre os carros"],
 correta:0
 },
 {
 pergunta:"🚦 O que significa a luz vermelha do semáforo?",
-respostas:["Parar","Acelerar","Virar à direita"],
+respostas:["Virar à direita","Acelerar","Parar"],
 correta:0
 },
 {
 pergunta:"🚗 Para que serve o cinto de segurança?",
-respostas:["Proteger os ocupantes","Enfeitar o carro","Segurar objetos"],
+respostas:["Enfeitar o carro","Protejer os ocupantes","Segurar objetos"],
 correta:0
 },
 {
 pergunta:"🚲 O ciclista deve:",
-respostas:["Respeitar as placas","Andar na contramão","Ignorar o semáforo"],
+respostas:["Ignoar o semáfaro","Andar na contramão","Respeitar as placas"],
 correta:0
 },
 {
 pergunta:"🛑 Ao encontrar uma faixa de pedestres com pessoas esperando:",
-respostas:["Parar o veículo","Acelerar","Buzinar"],
+respostas:["Acelerar","parar o veículo","Buzinar"],
 correta:0
 },
 {
 pergunta:"📱 O motorista pode usar o celular enquanto dirige?",
-respostas:["Não","Sim","Somente no semáforo"],
+respostas:["Sim","Não","Somente no semáforo"],
 correta:0
 },
 {
@@ -40,12 +40,12 @@ correta:0
 },
 {
 pergunta:"🚸 O que indica a placa de área escolar?",
-respostas:["Reduzir a velocidade e ter atenção","Estacionamento","Hospital"],
+respostas:["Estacionamento","reduzir a velociade e ter atenção","Hospital"],
 correta:0
 },
 {
 pergunta:"🏍️ O capacete é obrigatório para:",
-respostas:["Motociclistas","Motoristas","Pedestres"],
+respostas:["Motoristas","Motociclitas","Pedestres"],
 correta:0
 },
 {
